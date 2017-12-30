@@ -237,6 +237,7 @@ class MainApp:
         self.dbitems = self.db.fetch_items()
         self.adapter.values = list(self.dbitems)
         self.listView.setAdapter(self.adapter)
+        self.entry_text.setText('')
 
     def delete_item(self, value):
         self.db.delete_item(value)
